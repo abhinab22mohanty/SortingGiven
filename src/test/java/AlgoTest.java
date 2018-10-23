@@ -95,9 +95,17 @@ public class AlgoTest {
         assertTrue(map.get(algoUnderTest)+" Before Sort ...Second Element",data2.myArray[0].key == testArray[1]);
 
         data2.runAlgo(algoUnderTest);
-
+        
+        if(algoUnderTest != 0)
+        {
         assertTrue(map.get(algoUnderTest)+" After Sort ...First Element",data2.myArray[0].key == testArray[0]);
         assertTrue(map.get(algoUnderTest)+" After Sort ...Second Element",data2.myArray[1].key == testArray[1]);
+        }
+        
+        else {
+        	  assertFalse(map.get(algoUnderTest)+" After Sort ...First Element",data2.myArray[0].key == testArray[0]);
+              assertFalse(map.get(algoUnderTest)+" After Sort ...Second Element",data2.myArray[1].key == testArray[1]);
+        }
 
 
     }
@@ -140,9 +148,18 @@ public class AlgoTest {
 
         data3.runAlgo(algoUnderTest);
 
+        if(algoUnderTest != 0)
+        {
         assertTrue(map.get(algoUnderTest)+" After Sort ...First Element",data3.myArray[0].key == testArray[0]);
         assertTrue(map.get(algoUnderTest)+" After Sort ...Second Element",data3.myArray[1].key == testArray[1]);
         assertTrue(map.get(algoUnderTest)+" After Sort ...Third Element",data3.myArray[2].key == testArray[2]);
+        }
+        else {
+        	 assertFalse(map.get(algoUnderTest)+" After Sort ...First Element",data3.myArray[0].key == testArray[0]);
+             assertFalse(map.get(algoUnderTest)+" After Sort ...Second Element",data3.myArray[1].key == testArray[1]);
+             assertFalse(map.get(algoUnderTest)+" After Sort ...Third Element",data3.myArray[2].key == testArray[2]);
+        }
+        
     }
 
 

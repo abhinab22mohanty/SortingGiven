@@ -72,7 +72,7 @@ public class SortDemoTest{
 	 */
 	@Test
 	public void SameNumber() {
-	    data.initializeArray("5 5 64 4 4");  
+	    data.initializeArray("5 64 4");  
 	    
 	    SortDemoData data2 = new SortDemoData();
 	    data2.initializeArray("5 64 4");
